@@ -2,19 +2,34 @@
 
 A lightweight lead capture web app built with Python's standard library and SQLite.
 
-## Features
-- Capture name, email, company, and notes
-- Server-side validation for required fields
-- Persist leads in SQLite
-- View recent leads on the dashboard
-- Automated tests with pytest
+## Requirements
+- Python 3.10+
+- `pytest` (only needed if you want to run tests)
 
-## Run locally
+## How to run
+From the repository root:
+
 ```bash
 python app.py
 ```
 
-Open `http://localhost:5000`.
+You should see:
+
+```text
+Serving on http://0.0.0.0:5000
+```
+
+Then open:
+- `http://localhost:5000` (same machine)
+- or `http://127.0.0.1:5000`
+
+The SQLite database file (`leads.db`) is created automatically on first run.
+
+## How to use
+1. Fill in **Name** and **Email** (required).
+2. Optionally add **Company** and **Notes**.
+3. Click **Save Lead**.
+4. Your saved lead appears in the **Recent Leads** table.
 
 ## Run tests
 ```bash
